@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-image: linear-gradient(to right bottom, #2541b2, #03256c);
+}
+
+.main {
+  display: flex;
+  height: 95vh;
+  width: 95vw;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: transparent;
+  /* background-image: linear-gradient(to right bottom, #2541b2, #03256c); */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+}
+.container--1 {
+  align-items: center;
+  background-color: #031531;
+  /* clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0 100%, 0 0); */
+}
+.container--2 {
+  background-color: #f4eee8;
+}
+
+.card {
+  height: 30%;
+  position: relative;
+  overflow: hidden;
+  background-position: bottom;
+}
+
+.figure {
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  top: -140px;
+}
+
+.details {
+  height: 70%;
+}
+
+.header {
+  display: inline-block;
+  color: transparent;
+  font-size: 90px;
+  font-family: "Righteous", cursive;
+  margin-top: 60px;
+}
+
+.form {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.btn {
+  font-size: 40px;
+  border: 0;
+  cursor: pointer;
+  width: 100%;
+  background-color: #da0037;
+  color: #fff;
+  font-family: "Staatliches", cursive;
+  border-radius: 10px;
+  letter-spacing: 4px;
+  padding: 10px 20px;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  outline: none;
+  transform: scale(1.02);
+  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  /* background-color: #fff;
+  color: #da0037; */
+}
+
+.btn:active {
+  transform: scale(0.98);
+  transition: transition 0.3s;
+}
+
+.form--input:focus {
+  border-bottom: 3px solid green;
+}
+
+.form--input:placeholder-shown {
+  border-bottom: 3px solid red;
+}
+
+.form--input {
+  display: block;
+  font-size: 40px;
+  padding: 8px 16px;
+  text-decoration: none;
+  outline: none;
+  margin-bottom: 80px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-family: "Bebas Neue", cursive;
+}
+.form--input::placeholder {
+  color: transparent;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom {
+  margin-top: 80px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.city-name {
+  margin-top: 20px;
+  font-size: 60px;
+  font-family: "Righteous", cursive;
+  /* background-image: linear-gradient(to right, #0ea6dd, #0041a3);
+  -webkit-background-clip: text; */
+  color: black;
+}
+
+.box {
+  height: 70%;
+  width: 200px;
+  background-color: #da0037;
+  color: #fff;
+  font-family: "Righteous", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.box--1 {
+  font-size: 60px;
+}
+.box--2 {
+  text-align: center;
+  font-size: 45px;
+}
+
+.degree {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border: 4px solid #fff;
+  border-radius: 100px;
+  margin-top: -70px;
+}
+.temp {
+  margin-right: 10px;
+}
+.unit {
+  margin-left: 5px;
+}
+
+.turn {
+  animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    background-image: linear-gradient(to right, #00ff66, #bbff00);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  20% {
+    background-image: linear-gradient(to right, #71efa3, #50cb93);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  100% {
+    background-image: linear-gradient(to right, #00ff66, #bbff00);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
